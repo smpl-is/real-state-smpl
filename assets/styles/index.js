@@ -15,7 +15,7 @@ const LIKE_ACTIONS = "#B644B2";
 const DISLIKE_ACTIONS = "#363636";
 const FLASH_ACTIONS = "#5028D7";
 
-const ICON_FONT = "tinderclone";
+const ICON_FONT = "smplfont";
 
 const DIMENSION_WIDTH = Dimensions.get("window").width;
 const DIMENSION_HEIGHT = Dimensions.get("window").height;
@@ -45,7 +45,8 @@ export default StyleSheet.create({
 	},
 	descriptionCardItem: {
 		color: GRAY,
-		textAlign: "center"
+		textAlign: "justify",
+		padding: '10%'
 	},
 	status: {
 		paddingBottom: 10,
@@ -177,7 +178,7 @@ export default StyleSheet.create({
 	},
 
 	// COMPONENT - PROFILE ITEM
-	containerProfileItem: {
+	containerDetailsItem: {
 		backgroundColor: WHITE,
 		paddingHorizontal: 10,
 		paddingBottom: 25,
@@ -189,17 +190,17 @@ export default StyleSheet.create({
 		shadowColor: BLACK,
 		shadowOffset: { height: 0, width: 0 }
 	},
-	matchesProfileItem: {
-		width: 131,
+	headerDetailsItem: {
 		marginTop: -15,
 		backgroundColor: PRIMARY_COLOR,
 		paddingVertical: 7,
 		paddingHorizontal: 20,
-		borderRadius: 20,
-		textAlign: "center",
-		alignSelf: "center"
+		borderRadius: 2,
+		color: WHITE,
+		flexDirection: "row",
+		justifyContent: "space-between",
 	},
-	matchesTextProfileItem: {
+	matchesTextDetailsItem: {
 		fontFamily: ICON_FONT,
 		color: WHITE
 	},
@@ -210,7 +211,7 @@ export default StyleSheet.create({
 		fontSize: 15,
 		textAlign: "center"
 	},
-	descriptionProfileItem: {
+	descriptionDetailsItem: {
 		color: GRAY,
 		textAlign: "center",
 		paddingBottom: 20,
@@ -221,7 +222,7 @@ export default StyleSheet.create({
 		flexDirection: "row",
 		alignItems: "center"
 	},
-	iconProfile: {
+	iconDetails: {
 		fontFamily: ICON_FONT,
 		fontSize: 12,
 		color: DARK_GRAY,
@@ -240,7 +241,8 @@ export default StyleSheet.create({
 		height: DIMENSION_HEIGHT
 	},
 	top: {
-		paddingTop: 50,
+		// paddingTop: 50,
+		paddingTop: 10,
 		marginHorizontal: 10,
 		flexDirection: "row",
 		justifyContent: "space-between",
@@ -255,10 +257,13 @@ export default StyleSheet.create({
 	},
 
 	// CONTAINER - HOME
-	containerHome: { marginHorizontal: 10 },
+	containerHome: {
+		marginHorizontal: 10,
+		marginVertical: 20
+	},
 
-	// CONTAINER - MATCHES
-	containerMatches: {
+	// CONTAINER - LIKED
+	containerLiked: {
 		justifyContent: "space-between",
 		flex: 1,
 		paddingHorizontal: 10
@@ -272,7 +277,7 @@ export default StyleSheet.create({
 	},
 
 	// CONTAINER - PROFILE
-	containerProfile: { marginHorizontal: 0 },
+	containerDetails: { marginHorizontal: 0 },
 	photo: {
 		width: DIMENSION_WIDTH,
 		height: 450
@@ -291,12 +296,12 @@ export default StyleSheet.create({
 		color: WHITE,
 		paddingRight: 20
 	},
-	actionsProfile: {
+	actionsDetails: {
 		justifyContent: "center",
 		flexDirection: "row",
 		alignItems: "center"
 	},
-	iconButton: { fontFamily: ICON_FONT, fontSize: 20, color: WHITE },
+	iconButton: { fontFamily: ICON_FONT, fontSize: 15, color: WHITE },
 	textButton: {
 		fontFamily: ICON_FONT,
 		fontSize: 15,
@@ -317,8 +322,8 @@ export default StyleSheet.create({
 		flexDirection: "row",
 		alignItems: "center",
 		marginLeft: 10,
-		height: 50,
-		borderRadius: 25,
+		height: 30,
+		borderRadius: 2,
 		backgroundColor: SECONDARY_COLOR,
 		paddingHorizontal: 20
 	},
@@ -338,5 +343,37 @@ export default StyleSheet.create({
 		fontFamily: ICON_FONT,
 		height: 20,
 		paddingBottom: 7
+	},
+
+	// DETAILS
+	containerDetails: {
+		marginHorizontal: 0,
+	},
+	mapStyle: {
+		marginVertical: 20,
+		width: '100%',
+		height: DIMENSION_HEIGHT/5,
+	},
+	detailsHeader: {
+		flex: 1,
+		flexDirection: "row",
+		justifyContent: "space-between",
+	},
+	detailsPrice: {
+		color: WHITE,
+		fontWeight: 'bold',
+		fontSize: 13,
+	},
+	detailsType: {
+		color: WHITE,
+		fontWeight: 'bold',
+		fontSize: 13,
+	},
+	detailsText: {
+		color: DARK_GRAY,
+		fontSize: 13,
+		paddingVertical: 10,
+		textAlign: 'justify',
+		textTransform: "uppercase"
 	}
 });

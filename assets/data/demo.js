@@ -1,7 +1,7 @@
 module.exports = [
 	{
 		id: 1,
-		name: 'Leanne Graham',
+		name: 'Departamento',
 		status: 'Online',
 		match: '78',
 		description:
@@ -12,7 +12,7 @@ module.exports = [
 	},
 	{
 		id: 2,
-		name: 'Clementine Bauch',
+		name: 'Casa',
 		match: '93',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -22,7 +22,7 @@ module.exports = [
 	},
 	{
 		id: 3,
-		name: 'Ervin Howell',
+		name: 'Departamento',
 		match: '45',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -33,7 +33,7 @@ module.exports = [
 	},
 	{
 		id: 4,
-		name: 'John Lebsack',
+		name: 'Casa',
 		match: '88',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -43,7 +43,7 @@ module.exports = [
 	},
 	{
 		id: 5,
-		name: 'James Dietrich',
+		name: 'Departamento',
 		match: '76',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -53,7 +53,7 @@ module.exports = [
 	},
 	{
 		id: 6,
-		name: 'Patricia Schulist',
+		name: 'Casa',
 		match: '95',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -64,7 +64,7 @@ module.exports = [
 	},
 	{
 		id: 7,
-		name: 'Chelsey Weissnat',
+		name: 'Departamento',
 		match: '67',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -75,7 +75,7 @@ module.exports = [
 	},
 	{
 		id: 8,
-		name: 'Nicky Runol',
+		name: 'Casa',
 		match: '85',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -92,7 +92,7 @@ module.exports = [
 	},
 	{
 		id: 9,
-		name: 'Glenna Reichert',
+		name: 'Departamento',
 		match: '74',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
@@ -103,7 +103,7 @@ module.exports = [
 	},
 	{
 		id: 10,
-		name: 'Kurtis DuBuque',
+		name: 'Casa',
 		match: '98',
 		description:
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',

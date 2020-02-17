@@ -31,7 +31,7 @@ const CardItem = ({
       paddingTop: variant ? 10 : 15,
       paddingBottom: variant ? 5 : 7,
       color: '#363636',
-      fontSize: variant ? 15 : 30
+      fontSize: variant ? 15 : 18
     }
   ];
 
@@ -50,7 +50,10 @@ const CardItem = ({
       )}
 
       {/* NAME */}
-      <Text style={nameStyle}>{name}</Text>
+      {name && (
+          <Text style={nameStyle}>{name}</Text>
+      )}
+
 
       {/* DESCRIPTION */}
       {description && (

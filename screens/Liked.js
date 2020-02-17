@@ -13,16 +13,16 @@ import CardItem from '../components/CardItem';
 import Icon from '../components/Icon';
 import Demo from '../assets/data/demo.js';
 
-const Matches = () => {
+const Liked = (props) => {
   return (
     <ImageBackground
       source={require('../assets/images/bg.png')}
       style={styles.bg}
     >
-      <View style={styles.containerMatches}>
+      <View style={styles.containerLiked}>
         <ScrollView>
           <View style={styles.top}>
-            <Text style={styles.title}>Matches</Text>
+            <Text style={styles.title}>Liked</Text>
             <TouchableOpacity>
               <Text style={styles.icon}>
                 <Icon name="optionsV" />
@@ -35,11 +35,10 @@ const Matches = () => {
             data={Demo}
             keyExtractor={(item, index) => index.toString()}
             renderItem={({ item }) => (
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => props.navigation.navigate('Details')}>
                 <CardItem
                   image={item.image}
                   name={item.name}
-                  status={item.status}
                   variant
                 />
               </TouchableOpacity>
@@ -51,4 +50,4 @@ const Matches = () => {
   );
 };
 
-export default Matches;
+export default Liked;
